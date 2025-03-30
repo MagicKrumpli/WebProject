@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body background="images/background.jpg">
+    <header>
+        <section>
+            <h1><img id="logo" src="images/fidelogo.png" alt="Logo"> Internetional Chess Federation</h1>
+        </section>
+        <nav>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fide.html">About Fide</a></li>
+            <li><a href="tournaments.html">Tournaments</a></li>
+            <li><a href="players.html">Players</a></li>
+            <li><a href="createAcc.html">Register</a></li>
+    </nav>  
+    </header>
+    <main>
+        <h2>Chess Account Registration</h2>
+        <div class="registration">
+            <form>
+                <label for="username">Username <span>*</span></label>
+                <input type="text" id="username" name="username" required>
+    
+                <label for="email">Email <span>*</span></label>
+                <input type="email" id="email" name="email" required pattern="[^\s@]+@[^\s@]+\.[^\s@]+" title="Please enter a valid email address">
+    
+                <label for="password">Password <span>*</span></label>
+                <input type="password" id="password" name="password" required>
+    
+                <label for="chess-skill">How good are you at chess?</label>
+                <select id="chess-skill" name="chess-skill">
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                    <option value="master">Master</option>
+                </select>
+    
+                <button type="submit">Register</button>
+            </form>
+        </div>
+        
+    </main>
+    <footer>
+        <p>Serhii Keshel project for university </p>
+    </footer>
+    
+</body>
+</html>
